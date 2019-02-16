@@ -1,0 +1,61 @@
+﻿body {
+    color: darkblue;
+}
+
+.wrap {
+    margin-top: 100px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background-color: lightgray;
+}
+
+.myBox {
+    border-top: 1px solid darkblue;
+    border-left: 1px solid darkblue;
+    border-right: 3px solid darkblue;
+    border-bottom: 3px solid darkblue;
+    position: relative;
+}
+
+.myBox table, div.row {
+        background-color: aliceblue;
+    }
+
+.val-error {
+    text-align: right;
+    color: red;
+    padding: 5px;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+
+.mydialog {
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 30%;
+    background-color: rgba(128, 128, 128,0.9);
+    color: white;
+    box-shadow: 2px 2px gray;
+    display: none;
+}
+.opacity{
+    opacity:0.8;
+    background-color:mintcream;
+}
+
+button#yes {
+    float: left;
+}
+
+button#yes {
+    float: right;
+}
+.toDelete{
+    background-color:#ffa4c3;
+}

@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Shopping List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../css/images.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+            <div class="wrap myBox mt-4">
+                <div class="container">
+                    <h1 class="text-center display-5 py-4">Shopping List</h1>
+                    <form id="myForm">
+                        <div class="val-error"></div>
+                       <div class="row myBox mb-4 mx-1 pt-2 pb-1">
+                            <div class="col-lg-5">
+                                <label for="product">Product:</label>
+                                <select id="product" name="product" class="w-75 mb-2 p-1">
+                                    <option>Apple</option>
+                                    <option>Grape</option>
+                                    <option>Orange</option>
+                                    <option>Mango</option>
+                                    <option>Banana</option>
+                                    <option>Avocado</option>
+                                    <option>Grape</option>
+                                    <option>Lime</option>
+                                    <option>Apricot</option>
+                                    <option>Strawberry</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-5">
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" id="quantity" name="quantity" class="w-75 mb-2" placeholder=" 0 - 200 lbs">
+                            </div>
+                            <div class="col-lg-1">
+                       <button type="button" id="mybtn" >Add</button>
+                            </div>
+                            </div>
+                    </form>
+                    <div class="myBox mb-4" id="itembox">
+                        <table class="table table-hover" id="myTable">
+                            <tr><th>Product</th><th>Quantity</th><th>Quantity</th></tr>
+                            <!--
+                                <tr><td>Mango</td><td>12 lb</td><td><button type="button">Remove</button></td></tr>
+                            <tr><td>Grape</td><td>12 lb</td><td><button type="button">Remove</button></td></tr>
+                            <tr><td>Orange</td><td>12 lb</td><td><button type="button">Remove</button></td></tr>
+                            <tr><td>Banana</td><td>12 lb</td><td><button type="button">Remove</button></td></tr>
+                            <tr><td>Carrot</td><td>12 lb</td><td><button type="button">Remove</button></td></tr>
+                               -->
+                        </table>
+                        <div id="mydialog" class="mydialog">
+                            <p class="text-center" style="font-size:1.7rem;"><strong>Remove Item?</strong></p>
+                            <button id="yes">Yes</button><button id="no"> No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="../js/script.js"></script>
+    </body>
+</html>
